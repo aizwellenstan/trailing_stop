@@ -1,6 +1,6 @@
 //@version=5
 indicator(title="Donchian Channels", shorttitle="TS", overlay=true, timeframe="", timeframe_gaps=true)
-length = input.int(51, minval=1)
+length = input.int(150, minval=1)
 
 // lower = ta.lowest(length)
 lower = (ta.highest(length)-(ta.highest(length)-ta.lowest(length))*0.87)
